@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Operators
 {
@@ -6,9 +7,11 @@ namespace Operators
     {
         static void Main(string[] args)
         {
-            var a = 10;
-            var b = 3;
-            Console.WriteLine((float)a/(float)b);
+            var a = 1;
+            var b = 2;
+            var c = 3;
+            Console.WriteLine(a+b*c);
+            Console.WriteLine((a+b)*c);
         }
     }
 }
