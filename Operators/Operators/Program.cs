@@ -9,10 +9,12 @@ namespace Operators
         {
             var a = 1;
             var b = 2;
-            Console.WriteLine(a>b);
-            Console.WriteLine(a==b);
-            Console.WriteLine(a!=b);
-            Console.WriteLine(!(a!=b));
+            var c = 3;
+            Console.WriteLine(c>b && c>a);
+            Console.WriteLine(c > b && c ==a);
+            Console.WriteLine(c > b || c == a);
+            Console.WriteLine(!(c > b || c == a));
+
         }
     }
 }
