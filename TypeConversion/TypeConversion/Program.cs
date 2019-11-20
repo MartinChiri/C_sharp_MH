@@ -8,13 +8,13 @@ namespace TypeConversion
         {
             try
             {
-                var number = "1234";
-                byte b = Convert.ToByte(number);
+                string str = "true";
+                bool b = Convert.ToBoolean(str);
                 Console.WriteLine(b);
             }
             catch (Exception e)
             {
-                Console.WriteLine("The number could not be converted to a byte.");
+                Console.WriteLine("The string could not be converted to boolean.");
              
             }
             
