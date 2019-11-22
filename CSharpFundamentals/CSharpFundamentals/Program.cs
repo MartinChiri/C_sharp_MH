@@ -17,6 +17,10 @@ namespace CSharpFundamentals
             var end = DateTime.Now.AddMinutes(2);
             var duration = end - start;
             Console.WriteLine("Duration: "+duration);
+
+            //Properties
+            Console.WriteLine("Minutes: "+timeSpan.Minutes);
+            Console.WriteLine("Total minutes: "+timeSpan.TotalMinutes);
         }
 
     }
