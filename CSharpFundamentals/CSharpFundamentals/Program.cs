@@ -8,6 +8,7 @@ namespace CSharpFundamentals
         {
             var fullName = "Mosh Hamedani  ";
             Console.WriteLine("Trim: '{0}'",fullName.Trim());
+            Console.WriteLine("ToUpper: '{0}'",fullName.Trim().ToUpper());
         }
 
     }
