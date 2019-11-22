@@ -21,6 +21,9 @@ namespace CSharpFundamentals
             //Properties
             Console.WriteLine("Minutes: "+timeSpan.Minutes);
             Console.WriteLine("Total minutes: "+timeSpan.TotalMinutes);
+
+            //Add
+            Console.WriteLine("Add Example: "+timeSpan.Add(TimeSpan.FromMinutes(8)));
         }
 
     }
