@@ -32,6 +32,14 @@ namespace CSharpFundamentals
                 Console.WriteLine(n);
 
 
+            //Sort
+            Array.Sort(numbers);
+
+            Console.WriteLine("Effect of Sort()");
+            foreach (var n in numbers)
+                Console.WriteLine(n);
+
+
         }
 
     }
