@@ -14,6 +14,7 @@ namespace Iterations
                 if (!String.IsNullOrWhiteSpace(input))
                 {
                     Console.WriteLine("@Echo: " + input);
+                    continue;
                 }
 
                 break;
