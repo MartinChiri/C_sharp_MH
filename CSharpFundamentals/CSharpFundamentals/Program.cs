@@ -19,7 +19,6 @@ namespace CSharpFundamentals
 
             Console.WriteLine("Count : "+numbers.Count);
 
-
             for (var i = 0; i < numbers.Count; i++)
             {
                 if (numbers[i] == 1)
@@ -29,7 +28,9 @@ namespace CSharpFundamentals
             foreach (var number in numbers)
                 Console.WriteLine(number);
             
-            
+            numbers.Clear();
+            Console.WriteLine("Count : " + numbers.Count);
+
 
         }
 
