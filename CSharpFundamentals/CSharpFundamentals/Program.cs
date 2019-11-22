@@ -25,6 +25,12 @@ namespace CSharpFundamentals
             //Add
             Console.WriteLine("Add Example: "+timeSpan.Add(TimeSpan.FromMinutes(8)));
             Console.WriteLine("Add Example: "+timeSpan.Subtract(TimeSpan.FromMinutes(2)));
+
+            //ToString
+            Console.WriteLine("ToString: "+timeSpan.ToString());//not necessary ToString()
+
+            //Parse
+            Console.WriteLine("Parse: "+TimeSpan.Parse("01:02:03"));
         }
 
     }
