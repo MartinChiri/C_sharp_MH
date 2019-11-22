@@ -18,6 +18,12 @@ namespace CSharpFundamentals
             Console.WriteLine("Last index of 1: "+ numbers.LastIndexOf(1));
 
             Console.WriteLine("Count : "+numbers.Count);
+
+            numbers.Remove(1);
+            foreach (var number in numbers)
+                Console.WriteLine(number);
+            
+
         }
 
     }
