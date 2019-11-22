@@ -22,6 +22,10 @@ namespace CSharpFundamentals
 
             Console.WriteLine(method.ToString());//ToString isn't necessary inside writeline
 
+            var methodName = "Express";
+            var shippingMethod= (ShippingMethod)Enum.Parse(typeof(ShippingMethod), methodName);
+            //Console.WriteLine((int)shippingMethod);
+
         }
     }
 }
