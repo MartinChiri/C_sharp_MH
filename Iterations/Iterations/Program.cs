@@ -11,10 +11,13 @@ namespace Iterations
                 Console.Write("Type your name: ");
                 var input=Console.ReadLine();
 
-                if (String.IsNullOrWhiteSpace(input))
-                    break;
-                
-                Console.WriteLine("@Echo: "+input);
+                if (!String.IsNullOrWhiteSpace(input))
+                {
+                    Console.WriteLine("@Echo: " + input);
+                }
+
+                break;
+
             }
         }
     }
