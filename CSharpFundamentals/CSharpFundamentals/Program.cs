@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Threading.Channels;
-using CSharpFundamentals.Math;
 
 namespace CSharpFundamentals
 {
@@ -8,14 +6,11 @@ namespace CSharpFundamentals
     {
         static void Main(string[] args)
         {
-            var john=new Person();
-            john.FirstName = "John";
-            john.LastName = "Smith";
-            john.Introduce();
-
-            var calculator=new Calculator();
-            var result=calculator.Add(1, 2);
-            Console.WriteLine(result);
+            var numbers = new int[3];
+            numbers[0] = 1;
+            Console.WriteLine(numbers[0]);
+            Console.WriteLine(numbers[1]);
+            Console.WriteLine(numbers[2]);
         }
     }
 }
