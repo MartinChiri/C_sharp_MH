@@ -16,7 +16,8 @@ namespace CSharpFundamentals
             Console.WriteLine();
             Console.WriteLine("Index of 1: "+ numbers.IndexOf(1));
             Console.WriteLine("Last index of 1: "+ numbers.LastIndexOf(1));
-            
+
+            Console.WriteLine("Count : "+numbers.Count);
         }
 
     }
