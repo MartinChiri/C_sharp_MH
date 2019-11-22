@@ -6,17 +6,10 @@ namespace CSharpFundamentals
     {
         static void Main(string[] args)
         {
-            var season = Season.Autumn;
-
-            switch (season)
+            for (int i = 1; i <=10; i++)
             {
-                case Season.Autumn:
-                case Season.Summer:
-                    Console.WriteLine("We've got promotion");
-                    break;
-                default:
-                    Console.WriteLine("I don't understand that season!");
-                    break;
+                if(i%2==0)
+                    Console.WriteLine(i);
             }
         }
 
