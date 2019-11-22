@@ -24,6 +24,7 @@ namespace CSharpFundamentals
 
             //Add
             Console.WriteLine("Add Example: "+timeSpan.Add(TimeSpan.FromMinutes(8)));
+            Console.WriteLine("Add Example: "+timeSpan.Subtract(TimeSpan.FromMinutes(2)));
         }
 
     }
