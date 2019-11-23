@@ -22,18 +22,26 @@ namespace CSharpFundamentals
 
             }
 
-            var uniques = new List<int>();
-            foreach (var number in numbers)
-            {
-                if(!uniques.Contains(number))
-                    uniques.Add(number);
-            }
-
             Console.WriteLine("Unique numbers: ");
-            foreach (var number in uniques)
+            foreach (var number in GetUniqueNumbers(numbers))
             {
                 Console.WriteLine(number);
             }
+
+
+        }
+
+        public static List<int> GetUniqueNumbers(List<int> numbers)
+        {
+            var uniques = new List<int>();
+
+            foreach (var number in numbers)
+            {
+                if (!uniques.Contains(number))
+                    uniques.Add(number);
+            }
+
+            return uniques;
         }
 
 
