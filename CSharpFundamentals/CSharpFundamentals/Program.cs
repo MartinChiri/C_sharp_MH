@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace CSharpFundamentals
 {
@@ -26,6 +27,13 @@ namespace CSharpFundamentals
             if(String.IsNullOrWhiteSpace(" "))
                 Console.WriteLine("Invalid");
 
+            var str = "25";
+            var age=Convert.ToByte(str);
+            Console.WriteLine(age);
+
+            float price = 29.95f;
+            Console.WriteLine(price.ToString("C0",CultureInfo.CreateSpecificCulture("en-US")));
+                
         }
 
     }
