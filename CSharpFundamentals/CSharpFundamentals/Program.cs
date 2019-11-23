@@ -7,7 +7,7 @@ namespace CSharpFundamentals
     {
         static void Main(string[] args)
         {
-            var builder=new StringBuilder();
+            var builder=new StringBuilder("Hello World");
             builder.Append('-', 10);
             builder.AppendLine();
             builder.Append("Header");
@@ -19,6 +19,7 @@ namespace CSharpFundamentals
             builder.Remove(0, 10);
 
             builder.Insert(0, new string('-', 10));
+
             Console.WriteLine(builder);
             
         }
