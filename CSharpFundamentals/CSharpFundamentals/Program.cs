@@ -23,7 +23,7 @@ namespace CSharpFundamentals
 
             Console.WriteLine(fullName.Replace("Mosh", "Moshfegh"));
 
-            if(String.IsNullOrEmpty(" ".Trim()))
+            if(String.IsNullOrWhiteSpace(" "))
                 Console.WriteLine("Invalid");
 
         }
