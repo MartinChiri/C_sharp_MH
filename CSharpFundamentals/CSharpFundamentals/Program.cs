@@ -9,11 +9,10 @@ namespace CSharpFundamentals
         {
             Directory.CreateDirectory(@"c:\temp\folder1");
 
-            var files=Directory.GetFiles(@"c:\projects\CSharpFundamentals","*.*",SearchOption.AllDirectories);
+            var files=Directory.GetFiles(@"c:\projects\CSharpFundamentals","*.sln",SearchOption.AllDirectories);
             foreach (var file in files)
-            {
                 Console.WriteLine(file);
-            }
+            
         }
 
     }
