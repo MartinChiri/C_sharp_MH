@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.IO;
 
 namespace CSharpFundamentals
 {
@@ -8,41 +6,28 @@ namespace CSharpFundamentals
     {
         static void Main(string[] args)
         {
-
-            var numbers = new List<int>();
-
-            while (true)
+            var path = @"c:\somefile.jpg";
+            File.Copy(@"c:\temp\myfile.jpg", @"d:\temp\myfile.jpg",true);
+            File.Delete(path);
+            if (File.Exists(path))
             {
-                Console.WriteLine("Enter a number (or 'Quit' to exit):");
-                var input = Console.ReadLine();
-
-                if (input.ToLower() == "quit")
-                    break;
-                numbers.Add(Convert.ToInt32(input));
-
+                //
             }
 
-            Console.WriteLine("Unique numbers: ");
-            foreach (var number in GetUniqueNumbers(numbers))
-            {
-                Console.WriteLine(number);
-            }
+            var content = File.ReadAllText(path);
 
+            var fileInfo = new FileInfo(path);
+            fileInfo.CopyTo("...");
+            fileInfo.Delete();
+            if (fileInfo.Exists)
+            {
+                //
+            }
+            
 
         }
 
-        public static List<int> GetUniqueNumbers(List<int> numbers)
-        {
-            var uniques = new List<int>();
-
-            foreach (var number in numbers)
-            {
-                if (!uniques.Contains(number))
-                    uniques.Add(number);
-            }
-
-            return uniques;
-        }
+        
 
 
 
