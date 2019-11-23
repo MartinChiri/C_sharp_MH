@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Reflection.Metadata.Ecma335;
+using ArgumentNullException = System.ArgumentNullException;
 
 namespace CSharpFundamentals
 {
@@ -9,7 +9,7 @@ namespace CSharpFundamentals
         static void Main(string[] args)
         {
             var numbers = new List<int> {1, 2};
-            var smallests = GetSmallests(numbers, 3);
+            var smallests = GetSmallests(null, 1);
 
             foreach (var number in smallests)
             {
@@ -18,6 +18,10 @@ namespace CSharpFundamentals
         }
         public static List<int> GetSmallests(List<int> list, int count)
         {
+            if(list==null)
+                throw new ArgumentNullException("list");
+            if (count>list.Count || count<=0)
+                throw new ArgumentOutOfRangeException("count","Count should be between 1 and the number of elements.");
             var buffer=new List<int>(list);
             var smallests=new List<int>();
             while (smallests.Count<count)
