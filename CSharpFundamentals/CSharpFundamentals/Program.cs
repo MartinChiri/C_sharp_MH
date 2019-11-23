@@ -21,6 +21,8 @@ namespace CSharpFundamentals
             Console.WriteLine("FirstName: " + names[0]);
             Console.WriteLine("LastName: " + names[1]);
 
+            Console.WriteLine(fullName.Replace("Mosh", "Moshfegh"));
+
         }
 
     }
