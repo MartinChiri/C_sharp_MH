@@ -34,7 +34,7 @@ namespace CSharpFundamentals
             var min = list[0];
             for (var i = 0; i < list.Count; i++)
             {
-                if (list[i] > min)
+                if (list[i] < min)
                     min = list[i];
             }
             return min;
